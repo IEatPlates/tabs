@@ -109,7 +109,7 @@ var loadingText = document.querySelector("#loading-text");
     (async () => {
       const [dataUrl, wasmUrl, asmUrl] = await Promise.all([
         mergeFiles(getParts("Build/tabs.data.unityweb", 1, 86), "tabs.data.unityweb"),
-        mergeFiles(getParts("Build/tabs.wasm.code.unityweb", 1, 2), "tabs.wasm.code.unityweb"),
+        mergeFiles(getParts("Build/tabs.wasm.code.unityweb", 1, 3), "tabs.wasm.code.unityweb"),
       ]);
 
       const originalOpen = XMLHttpRequest.prototype.open;
